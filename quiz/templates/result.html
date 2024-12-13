@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+</head>
+<body>
+    <div style="position: absolute; top: 10px; right: 10px;">
+        <form method="post" action="{% url 'quiz:logout' %}">
+            {% csrf_token %}
+            <button type="submit" style="background-color: red; color: white; border: none; padding: 5px 10px; cursor: pointer;">
+                Logout
+            </button>
+        </form>
+    </div>
+    <h1>Quiz Results</h1>
+    <p>Total Questions: {{ total }}</p>
+    <ul>
+        {% for result in results %}
+            <li>
+                <strong>Question:</strong> {{ result.question }}<br>
+                <strong>Your Answer:</strong> {{ result.user_answer }}<br>
+                <strong>Correct Answer:</strong> {{ result.correct_option }}<br>
+                <strong>Status:</strong>
+                {% if result.is_correct %}
+                    ✅ Correct
+                {% else %}
+                    ❌ Incorrect
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'quiz:start' %}">Start New Quiz</a>
+</body>
+</html>
+
