@@ -189,7 +189,8 @@ http://127.0.0.1:8000/
 ## **Screenshots**
 
 ### Login Page
-![Login Page](screenshot_login.png)
+<img width="344" alt="image" src="https://github.com/user-attachments/assets/c9189d03-956d-4e73-ba78-cdac90a4687b" />
+
 
 ### Quiz Form
 ![Quiz Form](screenshot_form.png)
