@@ -194,10 +194,12 @@ http://127.0.0.1:8000/
 
 
 ### Quiz Form
-![Quiz Form](screenshot_form.png)
+<img width="825" alt="image" src="https://github.com/user-attachments/assets/48d4f4ae-6896-4f50-b620-c7f7102d5762" />
+
 
 ### Results Page
-![Results Page](screenshot_results.png)
+<img width="827" alt="image" src="https://github.com/user-attachments/assets/b05e9670-d799-49c3-8b6b-3f76974a4aa4" />
+
 
 ---
 
